@@ -1,0 +1,7 @@
+WD: #EXAMPLE /ei/.project-scratch/7/72a00ef5-e1cc-40e5-9ff3-f00f0f9f12fe/results/assembly/Basecall2Assembly/Maia
+Model_basecall: #EXAMPLE /ei/.project-scratch/7/72a00ef5-e1cc-40e5-9ff3-f00f0f9f12fe/results/assembly/Dorado/models/dna_r10.4.1_e8.2_400bps_sup@v5.0.0
+Model_herro: #EXAMPLE /ei/.project-scratch/7/72a00ef5-e1cc-40e5-9ff3-f00f0f9f12fe/results/assembly/Dorado/models/herro-v1 
+Name: #EXAMPLE Maia
+Raw_ONT: #EXAMPLE /ei/projects/7/72a00ef5-e1cc-40e5-9ff3-f00f0f9f12fe/data/raw/Maia3/pod5
+Ref: #EXAMPLE /ei/.project-scratch/7/72a00ef5-e1cc-40e5-9ff3-f00f0f9f12fe/results/assembly/Basecall2Assembly/Maia/data/zebrina_scaffolds_filtered.fasta  
+

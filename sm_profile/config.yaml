@@ -1,0 +1,59 @@
+executor: slurm
+jobs: 100
+latency-wait: 30
+default-resources:
+    slurm_partition: "ei-short"
+    mem_mb: 16000
+    cpus_per_task: 1
+    runtime: 45
+    slurm_account: "ei"
+set-resources:
+    convert_fast5_pod5:
+        slurm_partition: "ei-medium"
+        mem_mb: 400000
+        cpus_per_task: 16
+        runtime: 1000
+    basecall:
+        slurm_partition: "ei-gpu"
+        mem_mb: 200000
+        runtime: 2880
+        cpus_per_task: 8
+        slurm_extra: "'--gres=gpu:1'"
+    filtering:
+        slurm_partition: "ei-short"
+        mem_mb: 100000
+        cpus_per_task: 1
+        runtime: 45
+    error_correction:
+        slurm_partition: "ei-gpu"
+        mem_mb: 400000
+        cpus_per_task: 8
+        runtime: 7200
+        slurm_extra: "'--gres=gpu:1'"
+    map_OG_fastq_reference:
+        slurm_partition: "ei-largemem"
+        mem_mb: 800000
+        cpus_per_task: 16
+        runtime: 5000
+    map_Herro_corrected_reference:
+        slurm_partition: "ei-largemem"
+        mem_mb: 800000
+        cpus_per_task: 16
+        runtime: 5000
+    bam_concordance_herro:
+        slurm_partition: "ei-medium"
+        mem_mb: 200000
+        cpus_per_task: 8
+        runtime: 2400
+    bam_concordance_OG:
+        slurm_partition: "ei-medium"
+        mem_mb: 200000
+        cpus_per_task: 8
+        runtime: 2400
+    verkko_assembly:
+        slurm_partition: "ei-medium"
+        mem_mb: 200000
+        cpus_per_task: 8
+        runtime: 5000
+
+
